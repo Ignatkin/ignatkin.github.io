@@ -7,10 +7,30 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2113.6">
   <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.6px '.AppleSystemUIFontMonospaced'; color: #1b1f23; -webkit-text-stroke: #1b1f23}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.6px '.AppleSystemUIFontMonospaced'; color: #1b1f23; -webkit-text-stroke: #1b1f23; min-height: 16.0px}
+    p.p4 {margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; color: #000000}
     span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
 <h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1">I'm hosted with GitHub Pages.</span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1">1) How to setup GitHub</span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1">Generate a SSH Key Pair</span></h1>
+<p class="p2"><span class="s1">ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Copy the public SSH key to GitHub</span></p>
+<p class="p1"><span class="s1">Test the SSH key</span></p>
+<p class="p2"><span class="s1">ssh -T git@github.com</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Change directory</span></p>
+<p class="p2"><span class="s1">git remote set-url origin git@github.com:username/your-repository.git</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Try editing and push</span></p>
+<p class="p2"><span class="s1">git add -A</span></p>
+<p class="p2"><span class="s1">git commit -am "Update README.md"</span></p>
+<p class="p2"><span class="s1">git push</span></p>
 </body>
 </html>
