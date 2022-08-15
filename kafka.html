@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Kafka</title>
+</head>
+<body>
+
+<h1>Kafka</h1>
+<p>Each partition is a single log file where records are written to it in an append-only fashion.</p>
+<p>A Kafka cluster is made of one or more servers. In the Kafka universe, they are called Brokers. Each broker holds a subset of records that belongs to the entire cluster.</p>
+<p>Kafka distributes the partitions of a particular topic across multiple brokers.</p>
+<p>Partitions are the way that Kafka provides scalability</p>
+<p>A producer can use a partition key to direct messages to a specific partition. </p>
+<p>If a producer doesn’t specify a partition key when producing a record, Kafka will use a round-robin partition assignment. Those records will be written evenly across all partitions of a particular topic.</p>
+<p>A partition can be consumed by one or more consumers, each reading at different offsets.</p>
+<p>Kafka has the concept of consumer groups where several consumers are grouped to consume a given topic. Consumers in the same consumer group are assigned the same group-id value.</p>
+<p>The consumer group concept ensures that a message is only ever read by a single consumer in the group.</p>
+<p>When a consumer group consumes the partitions of a topic, Kafka makes sure that each partition is consumed by exactly one consumer in the group.</p>
+<p>The maximum parallelism of a group will be equal to the number of partitions of that topic.</p>
+<p></p>
+<p></p>
+</body>
+</html>
