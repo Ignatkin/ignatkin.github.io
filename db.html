@@ -10,5 +10,9 @@
 <h1>DB</h1>
 <h2>Postgres</h2>
 <p><a href="https://www.postgresql.org/about/featurematrix/">Features</a></p>
+<h3>Transactions</h3>
+<p>BEGIN;<br/>
+UPDATE accounts SET balance = balance - 100.00
+ WHERE name = 'Alice';<br/>-- etc etc<br/>COMMIT;</p>
 </body>
 </html>
